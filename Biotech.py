@@ -4,11 +4,15 @@
 import os
 from pathlib import Path
 import pytz
+import ta
 import requests
 import numpy as np
 import pandas as pd
 import yfinance as yf
-import talib
+try:
+  import talib
+except: 
+    import ta as talib
 from dotenv import load_dotenv
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.preprocessing import StandardScaler
