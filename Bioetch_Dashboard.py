@@ -4,6 +4,7 @@
 # Keeps your working logic: imports TechnicalAnalyzer and _post_webhook.
 
 import io
+import ta
 import re
 import time
 from contextlib import redirect_stdout
